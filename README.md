@@ -11,9 +11,9 @@
 ## vae.py
 ### This file contains the class for the Variational Autoencoder along with its functions
 #### Input parameters:
-- **Input dim**: Number of Highly Variable Genes selected
+- **Input dim ($n$)**: Number of Highly Variable Genes selected. 
 - **Hidden dim**: Dimension of the first hidden layer, default set to 512. Each layer hidden layer in the Encoder reduces the dimension by 2, then to the Latent dimension.
-- **Latent dim**: The dimension of the reduced data, default set to 15. >Latent dim << input dim
+- **Latent dim ($rR)**: The dimension of the reduced data, default set to 15. > $r << n$
 
 #### Encoder: 
 Given a sample of log normalized count from a cell, $x_i$, outputs the parameters for the latent space.
